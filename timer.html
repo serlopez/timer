@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Timer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--<style>-->
+    <!--  body{-->
+    <!--    font-family: 'Roboto', sans-serif;-->
+    <!--    text-align: center;-->
+    <!--  }-->
+      
+    <!--  #settimer{-->
+    <!--    display: inline-block;-->
+    <!--    text-align: center;-->
+    <!--  }-->
+      
+    <!--  input, #days, #hours, #minutes, #seconds{-->
+    <!--    height: 80px;-->
+    <!--    width: 50px;-->
+    <!--    text-align: center;-->
+    <!--    font-size: 60px;-->
+    <!--    padding: 10px;-->
+    <!--    border-radius: 5px;-->
+    <!--  }-->
+      
+    <!--  .setdisplay{-->
+    <!--    display: inline-block;-->
+    <!--  }-->
+      
+    <!--  button{-->
+    <!--    background-color: #D3D3D3;-->
+    <!--    height: 40px;-->
+    <!--    width: 100px;-->
+    <!--    border-radius: 5px;-->
+    <!--  }-->
+      
+    <!--  #setddays, #setudays, #setdminutes, #setuminutes{-->
+    <!--    background-color:#F8F8F8;-->
+    <!--  }-->
+      
+    <!--  #setdhours, #setuhours, #setdseconds, #setuseconds{-->
+    <!--    background-color:#F0F0F0;-->
+    <!--  }-->
+    <!--</style>-->
+  </head>
+  <body>
+    <div id="settimer">
+      <h1>Countdown.</h1>
+      <p>Enter the time to count down.</p>
+      <div class="setdisplay">
+        <input type="number" id="setddays" min="0" max="9" value="0">
+        <input type="number" id="setudays" min="0" max="9" value="0">
+        <p>days</p>
+      </div>
+      <div class="setdisplay">
+        <input type="number" id="setdhours" min="0" max="2" value="0">
+        <input type="number" id="setuhours" min="0" max="9" value="0">
+        <p>hours</p>
+      </div>
+      <div class="setdisplay">
+        <input type="number" id="setdminutes" min="0" max="5" value="0">
+        <input type="number" id="setuminutes" min="0" max="9" value="0">
+        <p>minutes</p>
+      </div>
+      <div class="setdisplay">
+        <input type="number" id="setdseconds" min="0" max="5" value="0">
+        <input type="number" id="setuseconds" min="0" max="9" value="0">
+        <p>seconds</p>
+      </div>
+      <button>It will be over soon</button>
+    </div>
+    <div id="displaytimer">
+      <h2>Crash and burn in:</h2>
+      <div class="setdisplay">
+        <span id="days"></span>
+        <p>days</p>
+      </div>
+      <div class="setdisplay">
+        <span id="hours"></span>
+        <p>hours</p>
+      </div>
+      <div class="setdisplay">
+        <span id="minutes"></span>
+        <p>minutes</p>
+      </div>
+      <div class="setdisplay">
+        <span id="seconds"></span>
+        <p>seconds</p>
+      </div>
+      <div class="setdisplay"></div>
+    </div>
+    <div id="displayalert">
+      
+    </div>
+    <div id="soundoff"></div>
+    <audio id="chime" controls-preload="none">
+      <source src="sounds/chime.mp3" type="audio/mpeg">
+    </audio>
+    <script src="timer.js"></script>
+  </body>
+</html>
